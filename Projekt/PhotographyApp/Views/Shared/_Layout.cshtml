@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Grundläggande metadata och länkar till CSS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title - PHOTO - By W</title>
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- Länk till sidans CSS-fil -->
+</head>
+<body>
+    <!-- Sidhuvud -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="container">
+                <!-- Länk till startsidan -->
+                <a class="navbar-brand" href="/">PHOTO - By W</a>
+                <ul class="navbar-nav">
+                    <!-- Länk till Paketsidan -->
+                    <li><a class="nav-link" href="/Packages">Paket</a></li>
+                    <!-- Länk till bokningssidan för att skapa en ny bokning -->
+                    <li><a class="nav-link" href="/Bookings/Create">Boka</a></li>
+                    @if (HttpContextAccessor.HttpContext != null && HttpContextAccessor.HttpContext.Session.GetString("UserName") != null)
+                    {
+                        <!-- Länk till sidan för att skapa ett nytt paket (endast för inloggade användare) -->
+                        <li><a class="nav-link" href="/Packages/Create">Hantera paket</a></li>
+                        <!-- Länk till bokningssidan för att se alla bokningar (endast för inloggade användare) -->
+                        <li><a class="nav-link" href="/Bookings/">Bokningar</a></li>
+                        <!-- Länk för att logga ut -->
+                        <li><a class="nav-link" href="/Account/Logout">Logga ut</a></li>
+                    }
+                    else
+                    {
+                        <!-- Länk till inloggningssidan om användaren inte är inloggad -->
+                        <li><a class="nav-link" href="/Account/Login">Logga in</a></li>
+                    }
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Huvudinnehåll -->
+    <div class="container main-content">
+        <main role="main">
+            <!-- Här kommer innehållet från respektive vy att renderas -->
+            @RenderBody()
+        </main>
+    </div>
+    <!-- Sidfot -->
+    <footer class="site-footer">
+        <div class="container">
+            <!-- Sidfotens innehåll -->
+            2024 - Louise Lindberg
+        </div>
+    </footer>
+
+    <!-- Länk till sidans JavaScript-fil -->
+    <script src="~/js/site.js"></script>
+</body>
+</html>

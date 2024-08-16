@@ -1,0 +1,345 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/obj/Debug/net8.0/scopedcss/projectbundle/PhotographyApp.bundle.scp.css",
+      "PackagePath": "staticwebassets/PhotographyApp.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/action-1867014_640.jpg",
+      "PackagePath": "staticwebassets/uploads/action-1867014_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/ai-generated-8663328_640.png",
+      "PackagePath": "staticwebassets/uploads/ai-generated-8663328_640.png"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/animal-kingdom-3093163_640.jpg",
+      "PackagePath": "staticwebassets/uploads/animal-kingdom-3093163_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/baby-21249_640.jpg",
+      "PackagePath": "staticwebassets/uploads/baby-21249_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/baby-499976_640.jpg",
+      "PackagePath": "staticwebassets/uploads/baby-499976_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/box-1514845_640.jpg",
+      "PackagePath": "staticwebassets/uploads/box-1514845_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/boxing-5288635_640.jpg",
+      "PackagePath": "staticwebassets/uploads/boxing-5288635_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/cat-8612685_640.jpg",
+      "PackagePath": "staticwebassets/uploads/cat-8612685_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/dog-3093159_640.jpg",
+      "PackagePath": "staticwebassets/uploads/dog-3093159_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/education-3189934_640.jpg",
+      "PackagePath": "staticwebassets/uploads/education-3189934_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/extreme-4488462_640.jpg",
+      "PackagePath": "staticwebassets/uploads/extreme-4488462_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/family-6398107_640.jpg",
+      "PackagePath": "staticwebassets/uploads/family-6398107_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/family-7257182_640.jpg",
+      "PackagePath": "staticwebassets/uploads/family-7257182_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/father-84639_640.jpg",
+      "PackagePath": "staticwebassets/uploads/father-84639_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/love-6600903_640.jpg",
+      "PackagePath": "staticwebassets/uploads/love-6600903_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/siblings-7103506_640.jpg",
+      "PackagePath": "staticwebassets/uploads/siblings-7103506_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/wedding-7608565_640.jpg",
+      "PackagePath": "staticwebassets/uploads/wedding-7608565_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/woman-4081760_640.jpg",
+      "PackagePath": "staticwebassets/uploads/woman-4081760_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/woman-8798476_640.jpg",
+      "PackagePath": "staticwebassets/uploads/woman-8798476_640.jpg"
+    },
+    {
+      "Id": "/Users/louiselindberg/PhotographyApp/wwwroot/uploads/women-655353_640.jpg",
+      "PackagePath": "staticwebassets/uploads/women-655353_640.jpg"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PhotographyApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.PhotographyApp.props",
+      "PackagePath": "build\\PhotographyApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.PhotographyApp.props",
+      "PackagePath": "buildMultiTargeting\\PhotographyApp.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.PhotographyApp.props",
+      "PackagePath": "buildTransitive\\PhotographyApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

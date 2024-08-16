@@ -1,0 +1,22 @@
+@model PhotographyApp.Models.Booking
+
+<!-- Rubrik för sidan -->
+<h2>Ta Bort Bokning</h2>
+
+<!-- Fråga om användaren är säker på att de vill ta bort bokningen -->
+<h3>Är du säker på att du vill ta bort denna bokning?</h3>
+
+<!-- Visar information om bokningen som ska tas bort -->
+<div>
+    <h4>@Model.CustomerName</h4>
+    <p>@Model.CustomerEmail</p>
+    <p><strong>Datum:</strong> @Model.Date.ToString("g")</p>
+    <p><strong>Paket:</strong> @Model.Package.Name</p>
+</div>
+
+<!-- Formulär för att bekräfta borttagningen, skickar data till Delete-aktion i kontrollern -->
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Ta Bort</button>
+    <a asp-action="Index" class="btn btn-secondary">Avbryt</a>
+</form>

@@ -1,0 +1,17 @@
+@model PhotographyApp.Models.Package
+
+<h2>Radera Paket</h2>
+
+<h3>Är du säker på att du vill radera detta paket?</h3>
+<div>
+    <h4>@Model.Name</h4> <!-- Visar namnet på paketet -->
+    <p>@Model.Description</p> <!-- Visar beskrivningen av paketet -->
+    <p><strong>Pris:</strong> @Model.Price.ToString("C")</p> <!-- Visar priset på paketet -->
+</div>
+
+<!-- Formulär för att bekräfta radering -->
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="Id" /> <!-- Dold fält för paketets ID -->
+    <button type="submit" class="btn btn-danger">Radera</button> <!-- Raderingsknapp -->
+    <a asp-action="Index" class="btn btn-secondary">Avbryt</a> <!-- Avbryt-knapp som går tillbaka till listan -->
+</form>

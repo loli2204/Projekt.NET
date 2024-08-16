@@ -1,0 +1,44 @@
+@model PhotographyApp.Models.Booking
+
+<!-- Rubrik för sidan -->
+<h2>Redigera Bokning</h2>
+
+<!-- Formulär för att redigera en befintlig bokning, skickar data till Edit-aktion i kontrollern -->
+<form asp-action="Edit" method="post">
+    <!-- Dolda fält för Id och PackageId -->
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="PackageId" />
+
+    <!-- Grupp för kundens namn -->
+    <div class="form-group">
+        <label asp-for="CustomerName"></label>
+        <input asp-for="CustomerName" class="form-control" />
+        <span asp-validation-for="CustomerName" class="text-danger"></span>
+    </div>
+
+    <!-- Grupp för kundens e-postadress -->
+    <div class="form-group">
+        <label asp-for="CustomerEmail"></label>
+        <input asp-for="CustomerEmail" class="form-control" />
+        <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+    </div>
+
+    <!-- Grupp för bokningsdatum -->
+    <div class="form-group">
+        <label asp-for="Date"></label>
+        <input asp-for="Date" class="form-control" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+
+    <!-- Grupp för att visa paketets namn, fältet är inaktiverat -->
+    <div class="form-group">
+        <label>Paket</label>
+        <input asp-for="Package.Name" class="form-control" disabled />
+    </div>
+
+    <!-- Knapp för att spara ändringarna -->
+    <button type="submit" class="btn btn-primary">Spara Ändringar</button>
+    
+    <!-- Länk för att återgå till listan över bokningar -->
+    <a asp-action="Index" class="btn btn-secondary">Tillbaka till Listan</a>
+</form>

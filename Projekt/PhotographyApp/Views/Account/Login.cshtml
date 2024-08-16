@@ -1,0 +1,29 @@
+<h2>Logga In</h2>
+<link rel="stylesheet" href="~/css/site.css" />
+
+<!-- Formulär för inloggning -->
+<form asp-action="Login" method="post">
+    <div class="form-group">
+        <!-- Fält för användarnamn -->
+        <label for="userName">Användarnamn</label>
+        <input type="text" name="userName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <!-- Fält för lösenord -->
+        <label for="password">Lösenord</label>
+        <input type="password" name="password" class="form-control" required />
+    </div>
+    <!-- Inloggningsknapp -->
+    <button type="submit" class="btn btn-primary">Logga in</button>
+</form>
+
+<!-- Länk till registreringssidan om användaren inte har ett konto -->
+<a href="@Url.Action("Register", "Account")" class="btn btn-link">Har du inget konto? Registrera dig här.</a>
+
+<!-- Visar ett felmeddelande om inloggningen misslyckas -->
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}

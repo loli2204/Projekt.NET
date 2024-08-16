@@ -1,0 +1,569 @@
+/* wwwroot/css/site.css */
+
+/* Nollställning av marginaler och padding för grundläggande element */
+body, h1, h2, h3, p, ul, li, form, input, textarea, button, label {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Grundläggande styling för body */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000; /* Svart text */
+  background-color: #ffffff; /* Vit bakgrund */
+  padding: 20px;
+}
+
+/* Styling för rubriker */
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  color: #000000; /* Svart text */
+}
+
+/* Styling för länkar */
+a {
+  color: #40e0d0; /* Turkos länkfärg */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout-styling för container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styling för sidhuvud */
+.site-header {
+  background-color: #000000; /* Svart bakgrund för header */
+  color: #ffffff; /* Vit text */
+  padding: 20px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  color: #ffffff; /* Vit text */
+  text-decoration: none;
+}
+
+.navbar .navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .navbar-nav li {
+  margin-right: 15px;
+}
+
+.navbar .navbar-nav li:last-child {
+  margin-right: 0;
+}
+
+.navbar .nav-link {
+  color: #bbbbbb; /* Ljusgrå text */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffffff; /* Vit text vid hover */
+}
+
+/* Main content styling */
+.main-content {
+  padding: 20px 0;
+}
+
+/* Formulärstyling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #000000; /* Svart text */
+}
+
+input[type="text"], input[type="number"], textarea, input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #aaaaaa; /* Mellangrå gräns */
+  border-radius: 4px;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, textarea:focus {
+  border-color: #40e0d0; /* Turkos gräns vid fokus */
+  outline: none;
+}
+
+/* Styling för knappar */
+button[type="submit"], .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #40e0d0; /* Turkos bakgrund */
+  color: #000000; /* Vit text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+button[type="submit"]:hover, .btn:hover {
+  background-color: #008b8b; /* Mörkare turkos vid hover */
+}
+
+/* Styling för varningsmeddelanden */
+.alert {
+  padding: 15px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Styling för kort (cards) som visar paketen */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card {
+  background-color: #ffffff; /* Vit bakgrund */
+  border: 1px solid #dddddd; /* Ljusgrå gräns */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 20px); /* Tre kolumner med jämnt utrymme mellan dem */
+  max-width: 300px; /* Sätt maxbredd för att göra korten mindre */
+}
+
+.card img {
+  width: 100%;
+  height: 150px; /* Gör bilden mindre för att passa kortet */
+  object-fit: cover; /* Se till att bilden fyller kortet utan att förvrängas */
+  border-bottom: 1px solid #dddddd; /* Ljusgrå gräns */
+}
+
+.card-body {
+  padding: 10px; /* Minska padding för att göra kortet kompaktare */
+}
+
+.card-title {
+  font-size: 1.1rem; /* Gör titeln lite mindre */
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 10px;
+}
+
+/* Footer-styling */
+.footer, .site-footer {
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #cccccc; /* Gräns i en ljusare grå nyans */
+  margin-top: 20px;
+  color: #666666; /* Mörkgrå text */
+  font-size: 0.9rem;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar .navbar-nav li {
+    margin-bottom: 10px;
+  }
+
+  .navbar .navbar-nav li:last-child {
+    margin-bottom: 0;
+  }
+
+  .cards-container {
+    justify-content: center;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Två kolumner på mindre skärmar */
+    max-width: 100%; /* Se till att korten fyller bredden på mindre skärmar */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    flex: 1 1 100%; /* En kolumn på mycket små skärmar */
+  }
+}
+.hero-section {
+  background-color: #333;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.services-section, .about-section, .contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 30%;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  margin-top: 15px;
+}
+/* Grundläggande styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Formulär och fält */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-control:focus {
+  border-color: #40e0d0;
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Inloggningsknapp */
+/* Centralisering av knappar */
+.btn-container {
+  text-align: center; /* Centrerar knapparna inom containern */
+  margin-top: 20px; /* Extra utrymme ovanför knapparna */
+}
+
+/* Grundläggande knappstil */
+.btn {
+  display: inline-block; /* Gör knapparna inline-block för att kunna centreras */
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #40e0d0; /* Turkos bakgrund */
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 5px; /* Litet mellanrum mellan knapparna */
+}
+
+/* Knappens hover-effekt */
+.btn:hover {
+  background-color: #008b8b; /* Mörkare turkos vid hover */
+}
+
+/* Specifik styling för knappar */
+.btn-primary {
+  background-color: #40e0d0; /* Turkos bakgrund */
+}
+
+.btn-primary:hover {
+  background-color: #3a7c7d; /* Mörkare turkos vid hover */
+}
+
+.btn-secondary {
+  background-color: #6c757d; /* Mörkgrå bakgrund */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Mörkare grå vid hover */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Röd bakgrund */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Mörkare röd vid hover */
+}
+
+.btn-warning {
+  background-color: #ffc107; /* Gul bakgrund */
+  color: #212529; /* Mörk textfärg för kontrast */
+}
+
+.btn-warning:hover {
+  background-color: #e0a800; /* Mörkare gul vid hover */
+}
+
+/* Felmeddelande */
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.table th, .table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn {
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.alert-info {
+  margin-top: 20px;
+}
+/* Grundläggande styling */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling för karusellen */
+/* Grundläggande styling */
+
+/* Styling för karusellen */
+/* Styling för karusellen */
+.carousel {
+  position: relative;
+  max-width: 600px; /* Justera till en mindre max-bredd */
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Gör att karusellen fyller hela bredden */
+}
+
+.carousel-slide {
+  min-width: 100%; /* Säkerställer att varje bild tar upp hela bredden av karusellen */
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
+  width: 100%; /* Gör att bilderna fyller hela bredden av karusellen */
+  height: auto; /* Bibehåller bildens proportioner */
+  display: block;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  width: 30px; /* Justera storleken på kontrollerna */
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  font-size: 18px; /* Ändrar storleken på kontrollerna */
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+/* Styling för paketdetaljer */
+.package-details {
+  padding: 20px;
+  text-align: center;
+}
+
+.package-details p {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #40e0d0;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #008b8b;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+/* Centralisering av knappar och länk */
+.btn-container {
+  text-align: center; /* Centrerar innehållet */
+  margin-top: 20px; /* Extra utrymme ovanför */
+}
+
+/* Styling för knappar */
+.btn {
+  display: inline-block; /* Gör knapparna inline-block för att kunna centreras */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px; /* Mellanrum mellan knapparna */
+}
+
+/* Knappar med specifika stilar */
+.btn-primary {
+  background-color: #40e0d0; /* Turkos bakgrund */
+  color: #ffffff; /* Vit text */
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3a7c7d; /* Mörkare turkos vid hover */
+}
+
+.btn-link {
+  color: #000000; /* Svart text */
+  text-decoration: none;
+  display: block; /* Gör länken till block för att kunna centrera den */
+  margin: 20px auto 0; /* Mellanrum ovanför och centrerar länken */
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}

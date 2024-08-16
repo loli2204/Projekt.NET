@@ -1,0 +1,52 @@
+@model IEnumerable<PhotographyApp.Models.Booking>
+
+<!-- Rubrik för sidan -->
+<h2 class="my-4">Bokningar</h2>
+
+<!-- Kontrollera om det finns några bokningar -->
+@if (Model.Any())
+{
+    <!-- Om det finns bokningar, visa dem i en tabell -->
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <!-- Kolumnrubriker för kundens namn, e-post, datum, och paket -->
+                    <th scope="col">Kund</th>
+                    <th scope="col">E-post</th>
+                    <th scope="col">Datum</th>
+                    <th scope="col">Paket</th>
+                    <th scope="col">Åtgärder</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Iterera genom bokningarna och skapa en rad för varje -->
+                @foreach (var booking in Model)
+                {
+                    <tr>
+                        <!-- Visa kundens namn -->
+                        <td>@booking.CustomerName</td>
+                        <!-- Visa kundens e-postadress -->
+                        <td>@booking.CustomerEmail</td>
+                        <!-- Visa bokningsdatum i kort format -->
+                        <td>@booking.Date.ToString("g")</td>
+                        <!-- Visa namnet på det bokade paketet -->
+                        <td>@booking.Package.Name</td>
+                        <!-- Alternativ för att redigera eller ta bort bokningen -->
+                        <td>
+                            <a href="@Url.Action("Edit", new { id = booking.Id })" class="btn btn-warning btn-sm" aria-label="Redigera bokning">Redigera</a>
+                            <a href="@Url.Action("Delete", new { id = booking.Id })" class="btn btn-danger btn-sm" aria-label="Ta bort bokning" onclick="return confirm('Är du säker på att du vill ta bort denna bokning?');">Ta Bort</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <!-- Om det inte finns några bokningar, visa ett meddelande -->
+    <div class="alert alert-info" role="alert">
+        Inga bokningar tillgängliga.
+    </div>
+}

@@ -1,0 +1,13 @@
+@model PhotographyApp.Models.Booking
+<link rel="stylesheet" href="~/css/site.css" />
+
+<!-- Rubrik för sidan -->
+<h2>Bokningsbekräftelse</h2>
+
+<!-- Visar ett tackmeddelande med kundens namn och paketnamnet -->
+<p>Tack, @Model.CustomerName, för att du bokade paketet @Model.Package.Name.</p>
+<!-- Visar det bekräftade bokningsdatumet -->
+<p>Din bokning är bekräftad för @Model.Date.ToShortDateString().</p>
+
+<!-- Länk för att återvända till paketsidan, stylad som en primär knapp -->
+<a href="@Url.Action("Index", "Packages")" class="btn btn-primary">Återvänd till paket</a>

@@ -1,0 +1,60 @@
+@model PhotographyApp.Models.Package
+<link rel="stylesheet" href="~/css/site.css" />
+
+<h2>@Model.Name</h2> <!-- Visar namnet på paketet -->
+
+<div class="carousel">
+    <!-- Kontrollera om det finns bilder att visa i karusellen -->
+    @if (Model.ImagePaths != null && Model.ImagePaths.Count > 0)
+    {
+        <div class="carousel-slides">
+            @for (var i = 0; i < Model.ImagePaths.Count; i++)
+            {
+                <div class="carousel-slide @(i == 0 ? "active" : "")">
+                    <img src="@Model.ImagePaths[i]" alt="Bild @(i + 1)">
+                </div>
+            }
+        </div>
+        <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+        <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+    }
+</div>
+
+<div class="package-details">
+    <p>@Model.Description</p> <!-- Visar paketets beskrivning -->
+    <p><strong>Pris:</strong> @Model.Price.ToString("C")</p> <!-- Visar priset på paketet -->
+    <a href="@Url.Action("Create", "Bookings", new { packageId = Model.Id })" class="btn">Boka Nu</a> <!-- Länk för att boka paketet -->
+</div>
+
+<a href="@Url.Action("Index")" class="btn btn-secondary mt-3">Tillbaka till paket</a> <!-- Länk för att gå tillbaka till paketlistan -->
+
+<!-- Lägg till skriptet för att hantera bildspelet -->
+<script>
+let currentSlide = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+    if (index >= totalSlides) currentSlide = 0;
+    else if (index < 0) currentSlide = totalSlides - 1;
+    else currentSlide = index;
+    // Mjuk övergång
+    const offset = -currentSlide * 100;
+    document.querySelector('.carousel-slides').style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+// Initiera den första bilden
+showSlide(currentSlide);
+
+// Automatisk övergång varannan sekund
+setInterval(nextSlide, 3000);
+
+</script>

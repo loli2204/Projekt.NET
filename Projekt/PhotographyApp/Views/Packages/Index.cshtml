@@ -1,0 +1,32 @@
+@model IEnumerable<PhotographyApp.Models.Package>
+<link rel="stylesheet" href="~/css/site.css" />
+
+<h2>Paket</h2>
+
+@if (Model.Any())
+{
+    <div class="cards-container">
+        @foreach (var package in Model)
+        {
+            <div class="card">
+                <!-- Visar den första bilden i paketet om det finns några -->
+                @if (package.ImagePaths != null && package.ImagePaths.Count > 0)
+                {
+                    <img src="@Url.Content(package.ImagePaths.First())" class="card-img-top" alt="@package.Name" />
+                }
+                <div class="card-body">
+                    <h5 class="card-title">@package.Name</h5> <!-- Visar paketets namn -->
+                    <p class="card-text">@package.Description</p> <!-- Visar paketets beskrivning -->
+                    <p class="card-text"><strong>Pris:</strong> @package.Price.ToString("C")</p> <!-- Visar paketets pris -->
+                    <!-- Länk för att visa paketet -->
+                    <a href="@Url.Action("Details", new { id = package.Id })" class="btn btn-primary">Visa Paket</a>
+                    
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p>Inga paket tillgängliga.</p> <!-- Meddelande om inga paket finns -->
+}
